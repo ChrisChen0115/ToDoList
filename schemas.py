@@ -1,3 +1,4 @@
+# Pydantic Schemas & Validation
 from pydantic import BaseModel
 
 class TodoBase(BaseModel):
@@ -12,3 +13,6 @@ class TodoResponse(TodoBase):
 
     class Config:
         orm_mode = True
+
+class TodoUpdate(TodoBase):
+    pass
